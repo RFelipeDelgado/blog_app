@@ -5,6 +5,7 @@ import Blog from "./components/Blog/Blog";
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import styled from "styled-components";
+import Post from "./components/Post/Post";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/about" element={<About />} />
+            <Route path="/post/:id" element={<Post />} />
           </Routes>
         </Main>
       </ContenedorPrincipal>
